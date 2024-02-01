@@ -40,7 +40,7 @@ test('getURLsFromHTML', () => {
     </html>
     `
     const inputBaseURL = "https://blog.boot.dev"
-    const actual = normalizeURL(inputHTMLBody, inputBaseURL)
+    const actual = getURLsFromHTML(inputHTMLBody, inputBaseURL)
     const expected = ["https://blog.boot.dev/"]
     expect(actual).toEqual(expected)
 })
